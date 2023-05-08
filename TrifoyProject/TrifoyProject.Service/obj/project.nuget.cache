@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "VGDB1Qha6qJLkIsESXvdiBrH7u96ffDp1jlPAYZpVs64iM7/Iq712xeaZdD+5G0aUIDyQX5NMorgaiJVE6Ffmg==",
+  "dgSpecHash": "EPZ0AyWj95qjpYI77bFcZ7AaDVDK+VYgzmVBVC01ylfY2Jhk3uS2LhWctnASaYs2KIiNucGqlGPGYgN6ICzCgg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Melih\\Desktop\\Melih\\projeler\\C#23\\TrifoyProject\\TrifoyProject\\TrifoyProject.Service\\TrifoyProject.Service.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Melih\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Melih\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\Melih\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
+    "C:\\Users\\Melih\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Melih\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Melih\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\Melih\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Melih\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
