@@ -1214,6 +1214,29 @@
             "rid": "win"
           }
         }
+      },
+      "TrifoyProject.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/TrifoyProject.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TrifoyProject.Core.dll": {}
+        }
+      },
+      "TrifoyProject.Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.5"
+        },
+        "compile": {
+          "bin/placeholder/TrifoyProject.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TrifoyProject.Entity.dll": {}
+        }
       }
     }
   },
@@ -3625,6 +3648,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "TrifoyProject.Core/1.0.0": {
+      "type": "project",
+      "path": "../TrifoyProject.Core/TrifoyProject.Core.csproj",
+      "msbuildProject": "../TrifoyProject.Core/TrifoyProject.Core.csproj"
+    },
+    "TrifoyProject.Entity/1.0.0": {
+      "type": "project",
+      "path": "../TrifoyProject.Entity/TrifoyProject.Entity.csproj",
+      "msbuildProject": "../TrifoyProject.Entity/TrifoyProject.Entity.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3632,7 +3665,9 @@
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 7.0.5",
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
-      "Microsoft.EntityFrameworkCore.Tools >= 7.0.5"
+      "Microsoft.EntityFrameworkCore.Tools >= 7.0.5",
+      "TrifoyProject.Core >= 1.0.0",
+      "TrifoyProject.Entity >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3661,7 +3696,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Melih\\Desktop\\Melih\\projeler\\C#23\\TrifoyProject\\TrifoyProject\\TrifoyProject.Core\\TrifoyProject.Core.csproj": {
+              "projectPath": "C:\\Users\\Melih\\Desktop\\Melih\\projeler\\C#23\\TrifoyProject\\TrifoyProject\\TrifoyProject.Core\\TrifoyProject.Core.csproj"
+            },
+            "C:\\Users\\Melih\\Desktop\\Melih\\projeler\\C#23\\TrifoyProject\\TrifoyProject\\TrifoyProject.Entity\\TrifoyProject.Entity.csproj": {
+              "projectPath": "C:\\Users\\Melih\\Desktop\\Melih\\projeler\\C#23\\TrifoyProject\\TrifoyProject\\TrifoyProject.Entity\\TrifoyProject.Entity.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
