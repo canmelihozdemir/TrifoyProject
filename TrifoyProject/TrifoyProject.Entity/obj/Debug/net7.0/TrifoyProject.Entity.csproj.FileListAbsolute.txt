@@ -1,0 +1,12 @@
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Entity\bin\Debug\net7.0\TrifoyProject.Entity.deps.json
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Entity\bin\Debug\net7.0\TrifoyProject.Entity.dll
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Entity\bin\Debug\net7.0\TrifoyProject.Entity.pdb
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Entity\obj\Debug\net7.0\TrifoyProject.Entity.csproj.AssemblyReference.cache
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Entity\obj\Debug\net7.0\TrifoyProject.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Entity\obj\Debug\net7.0\TrifoyProject.Entity.AssemblyInfoInputs.cache
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Entity\obj\Debug\net7.0\TrifoyProject.Entity.AssemblyInfo.cs
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Entity\obj\Debug\net7.0\TrifoyProject.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Entity\obj\Debug\net7.0\TrifoyProject.Entity.dll
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Entity\obj\Debug\net7.0\refint\TrifoyProject.Entity.dll
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Entity\obj\Debug\net7.0\TrifoyProject.Entity.pdb
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Entity\obj\Debug\net7.0\ref\TrifoyProject.Entity.dll

@@ -1416,6 +1416,9 @@
       "TrifoyProject.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "TrifoyProject.Entity": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/TrifoyProject.Core.dll": {}
         },
@@ -1459,6 +1462,7 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "FluentValidation": "11.5.2",
+          "TrifoyProject.Core": "1.0.0",
           "TrifoyProject.Repository": "1.0.0"
         },
         "compile": {

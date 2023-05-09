@@ -1155,6 +1155,9 @@
       "TrifoyProject.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "TrifoyProject.Entity": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/TrifoyProject.Core.dll": {}
         },
@@ -3500,6 +3503,7 @@
     "net7.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "FluentValidation >= 11.5.2",
+      "TrifoyProject.Core >= 1.0.0",
       "TrifoyProject.Repository >= 1.0.0"
     ]
   },
@@ -3530,6 +3534,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "C:\\Users\\Melih\\Desktop\\Melih\\projeler\\C#23\\TrifoyProject\\TrifoyProject\\TrifoyProject.Core\\TrifoyProject.Core.csproj": {
+              "projectPath": "C:\\Users\\Melih\\Desktop\\Melih\\projeler\\C#23\\TrifoyProject\\TrifoyProject\\TrifoyProject.Core\\TrifoyProject.Core.csproj"
+            },
             "C:\\Users\\Melih\\Desktop\\Melih\\projeler\\C#23\\TrifoyProject\\TrifoyProject\\TrifoyProject.Repository\\TrifoyProject.Repository.csproj": {
               "projectPath": "C:\\Users\\Melih\\Desktop\\Melih\\projeler\\C#23\\TrifoyProject\\TrifoyProject\\TrifoyProject.Repository\\TrifoyProject.Repository.csproj"
             }

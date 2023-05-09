@@ -1,0 +1,15 @@
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Core\bin\Debug\net7.0\TrifoyProject.Core.deps.json
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Core\bin\Debug\net7.0\TrifoyProject.Core.dll
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Core\bin\Debug\net7.0\TrifoyProject.Core.pdb
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Core\obj\Debug\net7.0\TrifoyProject.Core.csproj.AssemblyReference.cache
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Core\obj\Debug\net7.0\TrifoyProject.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Core\obj\Debug\net7.0\TrifoyProject.Core.AssemblyInfoInputs.cache
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Core\obj\Debug\net7.0\TrifoyProject.Core.AssemblyInfo.cs
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Core\obj\Debug\net7.0\TrifoyProject.Core.csproj.CoreCompileInputs.cache
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Core\obj\Debug\net7.0\TrifoyProject.Core.dll
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Core\obj\Debug\net7.0\refint\TrifoyProject.Core.dll
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Core\obj\Debug\net7.0\TrifoyProject.Core.pdb
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Core\obj\Debug\net7.0\ref\TrifoyProject.Core.dll
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Core\bin\Debug\net7.0\TrifoyProject.Entity.dll
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Core\bin\Debug\net7.0\TrifoyProject.Entity.pdb
+C:\Users\Melih\Desktop\Melih\projeler\C#23\TrifoyProject\TrifoyProject\TrifoyProject.Core\obj\Debug\net7.0\TrifoyProject.Core.csproj.CopyComplete
