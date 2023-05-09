@@ -197,7 +197,7 @@ namespace TrifoyProject.Repository.Migrations
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
 
-                    b.Property<int>("PlayerFeaturesId")
+                    b.Property<int?>("PlayerFeaturesId")
                         .HasColumnType("int");
 
                     b.Property<string>("SecurityStamp")
@@ -221,7 +221,8 @@ namespace TrifoyProject.Repository.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.HasIndex("PlayerFeaturesId")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[PlayerFeaturesId] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
                 });
@@ -327,9 +328,7 @@ namespace TrifoyProject.Repository.Migrations
                 {
                     b.HasOne("TrifoyProject.Entity.PlayerFeatures", "PlayerFeatures")
                         .WithOne("AppUser")
-                        .HasForeignKey("TrifoyProject.Entity.AppUser", "PlayerFeaturesId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("TrifoyProject.Entity.AppUser", "PlayerFeaturesId");
 
                     b.Navigation("PlayerFeatures");
                 });

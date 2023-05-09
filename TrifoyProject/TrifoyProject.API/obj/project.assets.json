@@ -4371,6 +4371,7 @@
       "NLog >= 5.1.4",
       "NLog.Database >= 5.1.4",
       "Swashbuckle.AspNetCore >= 6.4.0",
+      "TrifoyProject.Core >= 1.0.0",
       "TrifoyProject.Service >= 1.0.0"
     ]
   },
@@ -4401,6 +4402,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "C:\\Users\\Melih\\Desktop\\Melih\\projeler\\C#23\\TrifoyProject\\TrifoyProject\\TrifoyProject.Core\\TrifoyProject.Core.csproj": {
+              "projectPath": "C:\\Users\\Melih\\Desktop\\Melih\\projeler\\C#23\\TrifoyProject\\TrifoyProject\\TrifoyProject.Core\\TrifoyProject.Core.csproj"
+            },
             "C:\\Users\\Melih\\Desktop\\Melih\\projeler\\C#23\\TrifoyProject\\TrifoyProject\\TrifoyProject.Service\\TrifoyProject.Service.csproj": {
               "projectPath": "C:\\Users\\Melih\\Desktop\\Melih\\projeler\\C#23\\TrifoyProject\\TrifoyProject\\TrifoyProject.Service\\TrifoyProject.Service.csproj"
             }

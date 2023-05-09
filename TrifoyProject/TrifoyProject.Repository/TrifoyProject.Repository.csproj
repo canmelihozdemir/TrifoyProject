@@ -17,10 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Configurations\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\TrifoyProject.Core\TrifoyProject.Core.csproj" />
     <ProjectReference Include="..\TrifoyProject.Entity\TrifoyProject.Entity.csproj" />
   </ItemGroup>

@@ -9,7 +9,7 @@ namespace TrifoyProject.Entity
 {
     public class AppUser:IdentityUser
     {
-        public int PlayerFeaturesId { get; set; }
+        public int? PlayerFeaturesId { get; set; }
         public PlayerFeatures? PlayerFeatures{ get; set; }
     }
 }

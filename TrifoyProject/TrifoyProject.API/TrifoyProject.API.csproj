@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TrifoyProject.Core\TrifoyProject.Core.csproj" />
     <ProjectReference Include="..\TrifoyProject.Service\TrifoyProject.Service.csproj" />
   </ItemGroup>
 

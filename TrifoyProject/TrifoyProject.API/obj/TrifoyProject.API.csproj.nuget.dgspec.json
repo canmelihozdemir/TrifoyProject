@@ -28,6 +28,9 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "C:\\Users\\Melih\\Desktop\\Melih\\projeler\\C#23\\TrifoyProject\\TrifoyProject\\TrifoyProject.Core\\TrifoyProject.Core.csproj": {
+                "projectPath": "C:\\Users\\Melih\\Desktop\\Melih\\projeler\\C#23\\TrifoyProject\\TrifoyProject\\TrifoyProject.Core\\TrifoyProject.Core.csproj"
+              },
               "C:\\Users\\Melih\\Desktop\\Melih\\projeler\\C#23\\TrifoyProject\\TrifoyProject\\TrifoyProject.Service\\TrifoyProject.Service.csproj": {
                 "projectPath": "C:\\Users\\Melih\\Desktop\\Melih\\projeler\\C#23\\TrifoyProject\\TrifoyProject\\TrifoyProject.Service\\TrifoyProject.Service.csproj"
               }
