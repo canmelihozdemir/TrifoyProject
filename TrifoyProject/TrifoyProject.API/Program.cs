@@ -47,11 +47,7 @@ builder.Services.AddIdentity<AppUser, AppRole>(options =>
 
 
 
-//builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-//builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-//builder.Services.AddScoped<IPlayerFeaturesRepository, PlayerFeaturesRepository>();
-//builder.Services.AddScoped(typeof(IService<>), typeof(Service<>));
-//builder.Services.AddScoped<IPlayerFeaturesService, PlayerFeaturesService>();
+
 
 builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 builder.Host.ConfigureContainer<ContainerBuilder>(conteinerBuilder=>conteinerBuilder.RegisterModule(new RepositoryServiceModule()));
