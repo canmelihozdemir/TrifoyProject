@@ -11,13 +11,13 @@ namespace TrifoyProject.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class HomeController : ControllerBase
+    public class PlayersController : CustomBaseController
     {
         private readonly UserManager<AppUser> _userManager;
 
         private readonly IPlayerFeaturesService _service;
 
-        public HomeController(IPlayerFeaturesService service, UserManager<AppUser> userManager)
+        public PlayersController(IPlayerFeaturesService service, UserManager<AppUser> userManager)
         {
             _service = service;
             _userManager = userManager;
@@ -26,7 +26,13 @@ namespace TrifoyProject.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllAsync()
         {
-            return Ok(await _service.GetAllAsync());
+            return CreateActionResult(CustomResponseDTO<List<PlayerFeatures>>.Success(200, (await _service.GetAllAsync()).ToList()));
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetByIdAsync(int id)
+        {
+            return CreateActionResult(CustomResponseDTO<PlayerFeatures>.Success(200, await _service.GetByIdAsync(id)));
         }
 
         [HttpPost]
@@ -44,6 +50,12 @@ namespace TrifoyProject.API.Controllers
             }
 
             return BadRequest(identityResult.Errors.Select(x => x.Description));
+        }
+
+        [HttpPost("RegisterAsync")]
+        public async Task<IActionResult> RegisterAsync(PlayerRegisterDTO playerRegisterDTO)
+        {
+            return CreateActionResult(CustomResponseDTO<PlayerFeatures>.Success(201,await _service.RegisterAsync(playerRegisterDTO))) ;
         }
     }
 }
