@@ -2,6 +2,7 @@ using Autofac.Core;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
+using TrifoyProject.API.Middlewares;
 using TrifoyProject.Core.Repositories;
 using TrifoyProject.Core.Services;
 using TrifoyProject.Core.UnitOfWorks;
@@ -65,6 +66,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCustomException();
 
 app.UseAuthentication();
 

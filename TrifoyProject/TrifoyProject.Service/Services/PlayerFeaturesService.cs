@@ -38,7 +38,7 @@ namespace TrifoyProject.Service.Services
             }
 
             var errorMessages = identityResult.Errors.Select(x => x.Description).ToString();
-            throw new ClientSideException(errorMessages);
+            throw new ClientSideException(errorMessages!);
         }
     }
 }
