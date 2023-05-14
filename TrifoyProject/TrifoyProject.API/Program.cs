@@ -33,7 +33,7 @@ builder.Services.AddIdentity<AppUser, AppRole>(options =>
 {
     //username default unique dir
     options.User.RequireUniqueEmail = false;
-    options.User.AllowedUserNameCharacters += "*!";
+    options.User.AllowedUserNameCharacters = string.Empty;
     options.Password.RequiredLength = 6;
     options.Password.RequireNonAlphanumeric = false;
     options.Password.RequireLowercase = false;
