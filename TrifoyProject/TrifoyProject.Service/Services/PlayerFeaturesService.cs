@@ -1,12 +1,6 @@
 ﻿using AutoMapper;
-using Azure.Core;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TrifoyProject.Core.DTOs;
 using TrifoyProject.Core.Repositories;
 using TrifoyProject.Core.Services;
@@ -24,7 +18,27 @@ namespace TrifoyProject.Service.Services
             _userManager = userManager;
         }
 
-        public async Task<PlayerFeaturesDTO> RegisterAsync(PlayerRegisterDTO playerRegisterDTO)
+        public async Task<AppUser> GetUserByNameAsync(string userName)
+        {
+            var hasUser = await _userManager.FindByNameAsync(userName);
+
+            if (hasUser == null)
+            {
+                throw new NotFoundException("Böyle bir kullanıcı adı bulunamadı!");
+            }
+
+            return hasUser;
+        }
+
+        public async Task<AppUser> LoginAsync(PlayerLoginDTO playerLoginDTO)
+        {
+            var hasUser=await GetUserByNameAsync(playerLoginDTO.UserName);
+
+            return hasUser;
+        }
+
+
+        public async Task<PlayerFeaturesDTO> RegisterAsync(PlayerRegisterDTO playerRegisterDTO)//REFACTOR TO REPO LAYER
         {
             var identityResult = await _userManager.CreateAsync(new() { UserName = playerRegisterDTO.UserName }, playerRegisterDTO.Password!);
 

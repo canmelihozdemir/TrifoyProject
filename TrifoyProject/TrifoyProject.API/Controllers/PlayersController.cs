@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using TrifoyProject.Core.DTOs;
 using TrifoyProject.Core.Services;
 using TrifoyProject.Entity;
+using TrifoyProject.Service.Exceptions;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace TrifoyProject.API.Controllers
@@ -14,13 +15,15 @@ namespace TrifoyProject.API.Controllers
     public class PlayersController : CustomBaseController
     {
         private readonly UserManager<AppUser> _userManager;
+        private readonly SignInManager<AppUser> _signInManager;
 
         private readonly IPlayerFeaturesService _service;
 
-        public PlayersController(IPlayerFeaturesService service, UserManager<AppUser> userManager)
+        public PlayersController(IPlayerFeaturesService service, UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
         {
             _service = service;
             _userManager = userManager;
+            _signInManager = signInManager;
         }
 
         [HttpGet]
@@ -53,9 +56,30 @@ namespace TrifoyProject.API.Controllers
         }
 
         [HttpPost("RegisterAsync")]
-        public async Task<IActionResult> RegisterAsync(PlayerRegisterDTO playerRegisterDTO)
+        public async Task<IActionResult> RegisterAsync(PlayerRegisterDTO request)
         {
-            return CreateActionResult(CustomResponseDTO<PlayerFeaturesDTO>.Success(201,await _service.RegisterAsync(playerRegisterDTO))) ;
+            return CreateActionResult(CustomResponseDTO<PlayerFeaturesDTO>.Success(201,await _service.RegisterAsync(request))) ;
+        }
+
+
+        [HttpPost("LoginAsync")]
+        public async Task<IActionResult> LoginAsync(PlayerLoginDTO request)
+        {
+            var hasUser= await _service.LoginAsync(request);
+
+            var signInResult = await _signInManager.PasswordSignInAsync(hasUser, request.Password,false,true);
+
+            if (signInResult.Succeeded)
+            {
+                return CreateActionResult(CustomResponseDTO<bool>.Success(200,true));
+            }
+
+            if (signInResult.IsLockedOut)
+            {
+                throw new ClientSideException("Çok fazla hatalı giriş yapıldığı için 4 dakika boyunca giriş yapamazsınız.");
+            }
+
+            throw new ClientSideException("Girmiş olduğunuz şifre geçerli değildir!");
         }
     }
 }

@@ -11,5 +11,7 @@ namespace TrifoyProject.Core.Services
     public interface IPlayerFeaturesService:IService<PlayerFeatures>
     {
         Task<PlayerFeaturesDTO> RegisterAsync(PlayerRegisterDTO playerRegisterDTO);
+        Task<AppUser> LoginAsync(PlayerLoginDTO playerLoginDTO);
+        Task<AppUser> GetUserByNameAsync(string userName);
     }
 }

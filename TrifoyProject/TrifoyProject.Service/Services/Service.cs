@@ -13,6 +13,7 @@ using TrifoyProject.Core.UnitOfWorks;
 
 namespace TrifoyProject.Service.Services
 {
+
     public class Service<T> : IService<T> where T : class
     {
         private readonly IGenericRepository<T> _repository;
