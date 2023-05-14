@@ -24,7 +24,7 @@ namespace TrifoyProject.Service.Services
             _userManager = userManager;
         }
 
-        public async Task<PlayerFeatures> RegisterAsync(PlayerRegisterDTO playerRegisterDTO)
+        public async Task<PlayerFeaturesDTO> RegisterAsync(PlayerRegisterDTO playerRegisterDTO)
         {
             var identityResult = await _userManager.CreateAsync(new() { UserName = playerRegisterDTO.UserName }, playerRegisterDTO.Password!);
 
@@ -34,7 +34,8 @@ namespace TrifoyProject.Service.Services
                 var user = await _userManager.Users.Where(name => name.UserName == playerRegisterDTO.UserName).FirstOrDefaultAsync();
                 user!.PlayerFeaturesId = playerFeature.Id;
                 await _userManager.UpdateAsync(user);
-                return playerFeature;
+                
+                return _mapper.Map<PlayerFeaturesDTO>(playerFeature);
             }
 
             var errorMessages = identityResult.Errors.Select(x => x.Description).ToString();

@@ -55,7 +55,7 @@ namespace TrifoyProject.API.Controllers
         [HttpPost("RegisterAsync")]
         public async Task<IActionResult> RegisterAsync(PlayerRegisterDTO playerRegisterDTO)
         {
-            return CreateActionResult(CustomResponseDTO<PlayerFeatures>.Success(201,await _service.RegisterAsync(playerRegisterDTO))) ;
+            return CreateActionResult(CustomResponseDTO<PlayerFeaturesDTO>.Success(201,await _service.RegisterAsync(playerRegisterDTO))) ;
         }
     }
 }

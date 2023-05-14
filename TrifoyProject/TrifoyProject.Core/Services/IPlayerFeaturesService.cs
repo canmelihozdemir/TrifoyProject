@@ -10,6 +10,6 @@ namespace TrifoyProject.Core.Services
 {
     public interface IPlayerFeaturesService:IService<PlayerFeatures>
     {
-        Task<PlayerFeatures> RegisterAsync(PlayerRegisterDTO playerRegisterDTO);
+        Task<PlayerFeaturesDTO> RegisterAsync(PlayerRegisterDTO playerRegisterDTO);
     }
 }
